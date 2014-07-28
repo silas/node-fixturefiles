@@ -11,7 +11,7 @@ var fixtures = require('../lib');
  */
 
 describe('fixturefiles', function() {
-  describe('function', function() {
+  describe('getter', function() {
     before(function() {
       fixtures.reload();
     });
