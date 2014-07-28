@@ -1,0 +1,9 @@
+.env
+.jscs.json
+.jshintrc
+.npmignore
+.rock.yml
+config
+coverage
+test
+tmp

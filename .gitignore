@@ -1,0 +1,9 @@
+*.log
+*.pid
+*swp
+.env
+.rock.yml
+config
+coverage
+node_modules
+tmp

@@ -1,0 +1,33 @@
+{
+  "name": "fixturefiles",
+  "version": "0.1.0",
+  "description": "Fixture file loader",
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silas/node-fixturefiles.git"
+  },
+  "scripts": {
+    "cover": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive --check-leaks && open coverage/lcov-report/index.html",
+    "test": "./node_modules/.bin/jshint lib test && ./node_modules/.bin/jscs lib test && ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --recursive --check-leaks"
+  },
+  "keywords": [
+    "files",
+    "fixtures",
+    "loader",
+    "test"
+  ],
+  "author": "Silas Sewell <silas@sewell.org> (http://silas.sewell.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silas/node-fixturefiles/issues"
+  },
+  "homepage": "https://github.com/silas/node-fixturefiles",
+  "devDependencies": {
+    "istanbul": "^0.3.0",
+    "jscs": "^1.5.8",
+    "jshint": "^2.5.2",
+    "mocha": "^1.21.3",
+    "should": "^4.0.4"
+  }
+}
