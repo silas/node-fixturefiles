@@ -4,6 +4,8 @@
 
 require('should');
 
+var path = require('path');
+
 var fixtures = require('../lib');
 
 /**
@@ -47,6 +49,13 @@ describe('fixturefiles', function() {
       fixtures.one('buffer').should.be.instanceof(Buffer);
       fixtures.one('buffer').length.should.equal(18);
       fixtures.two('buffer').should.be.instanceof(Buffer);
+    });
+  });
+
+  describe('loadpath', function() {
+    it('should work', function() {
+      var f = fixtures(path.join(__dirname, 'fixtures2'));
+      f.test.should.eql({ hello: 'world' });
     });
   });
 });
