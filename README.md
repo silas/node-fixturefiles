@@ -1,4 +1,4 @@
-# Fixture Files
+# Fixture Files [![Build Status](https://travis-ci.org/silas/node-fixturefiles.svg?branch=master)](https://travis-ci.org/silas/node-fixturefiles)
 
 Simple Node.js module to load fixture files.
 
